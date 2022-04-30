@@ -1,0 +1,23 @@
+{
+  "name": "auto-assign-pr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "ncc build src/action.js -o dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xvepkj/auto-assign-pr.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xvepkj/auto-assign-pr/issues"
+  },
+  "homepage": "https://github.com/xvepkj/auto-assign-pr#readme",
+  "devDependencies": {
+    "@vercel/ncc": "^0.33.4"
+  }
+}
