@@ -4,7 +4,7 @@ description: 'Auto assign PR to the author'
 inputs:
   repo-access-token:
     description: 'Access Token for the repository'
-    default: '{{ github.token }}'
+    default: '${{ github.token }}'
 
 runs:
   using: 'node12'
