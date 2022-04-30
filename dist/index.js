@@ -8777,7 +8777,7 @@ async function run() {
         if(assignees.length > 0){
             core.info('Pull request already assigned');
         } else {    
-            const octokit = core.octokit(token);
+            const octokit = github.getOctokit(token);
             await octokit.rest.issues.addAssignees({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
