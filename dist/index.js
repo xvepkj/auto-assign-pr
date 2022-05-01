@@ -8775,7 +8775,7 @@ async function run() {
         const {assignees, number, user: { login: author }}  = context.payload.pull_request;
         
         if(assignees.length > 0){
-            core.info('Pull request already assigned');
+            core.info(`Pull request already assigned`);
         } else {    
             const octokit = github.getOctokit(token);
             await octokit.rest.issues.addAssignees({
@@ -8784,7 +8784,7 @@ async function run() {
                 issue_number: number,
                 assignees : [author]
             });
-            core.info('@${author} has been assigned to the pull request @${number}');
+            core.info(`@${author} has been assigned to the pull request @${number}`);
         }
     }
     catch (error) {
